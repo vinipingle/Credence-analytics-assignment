@@ -1,0 +1,392 @@
+body {
+    background-color: hsl(230, 17%, 14%);
+    font-family: "inter"
+}
+
+.main {
+    border: 1px;
+    width: 75%;
+    background-color: hsl(230, 17%, 14%);
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-social {
+    margin: 0;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+.navbar-total {
+    font-size: 18px;
+    margin: 0;
+    color: hsl(228, 34%, 66%);
+}
+
+.navbar-toggle {
+    margin-left: auto;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+
+.navbar {
+    margin-top: 3%;
+}
+
+.navbar-social {
+    margin: 0px;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+.navbar-total {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px;
+    color: hsl(228, 34%, 66%);
+}
+
+.c1 {
+    border-radius: 5px;
+    width: 20%;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: hsl(228, 28%, 20%);
+    border-top: 3px solid blue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.img {
+    margin-right: 8px;
+}
+
+.c1-username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(228, 34%, 66%);
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.c1-num {
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.c1-text {
+    color: hsl(228, 34%, 66%);
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.c1-today {
+    color: rgb(48, 119, 48);
+    margin-top: 7%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-2 {
+    margin-top: 5%;
+}
+
+.navbar-secondary {
+    padding: 10px;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 25px;
+}
+.navbar-overview{
+    font-weight: bold;
+}
+
+.c2 {
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 19%;
+    padding: 15px;
+    /* padding: 20px 25px; */
+    background-color: hsl(228, 28%, 20%);
+    margin-bottom: 5%;
+}
+
+.c2-pageview {
+    color: hsl(228, 34%, 66%);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.c2-num {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 20%;
+
+}
+
+.c2-class {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c2-percent {
+    color: rgb(48, 119, 48);
+    /* margin-top: 160%; */
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+body.light-mode {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(230, 17%, 14%);
+}
+
+body.light-mode .navbar-social{
+    color: hsl(230, 17%, 14%);
+}
+
+body.light-mode .navbar-overview{
+    /* background-color: hsl(227, 47%, 96%); */
+ color: hsl(228, 12%, 44%);
+}
+
+
+body.light-mode .main {
+    background-color: hsl(0, 0%, 100%);
+}
+
+body.light-mode .c1 {
+    background-color: hsl(227, 47%, 96%);
+}
+
+body.light-mode .c1-username {
+    color: hsl(226, 12%, 36%);
+}
+
+body.light-mode .c1-text {
+    color: hsl(226, 12%, 36%);
+}
+
+body.light-mode .c1-num{
+    background-color: hsl(227, 47%, 96%);
+    color: hsl(230, 17%, 14%)
+}
+
+body.light-mode .c1 .c1-today{
+    /* background-color: hsl(227, 47%, 96%); */
+    color: green
+}
+
+body.light-mode .c2-pageview{
+    /* background-color: hsl(227, 47%, 96%); */
+    color: hsl(226, 12%, 36%);
+}
+
+body.light-mode .c2-percent{
+    /* background-color: hsl(227, 47%, 96%); */
+    color: green
+}
+
+
+
+body.light-mode .c2 {
+    background-color: hsl(227, 47%, 96%);
+ 
+}
+
+body.light-mode .c2-num{
+        color: hsl(230, 17%, 14%)
+}
+
+@media (max-width: 1250px) {
+    .main {
+        width: 85%;
+    }
+     
+    .c2 {
+        width: 28%;
+    }
+
+    .navbar-social {
+        font-size: 25px;
+    }
+
+    .navbar-total {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        width: 90%;
+    }
+
+    .navbar-social {
+        font-size: 25px;
+    }
+
+    .navbar-total {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: width;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .c1 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .c2 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .c1-username {
+        font-size: 12px;
+    }
+
+    .c1-num {
+        font-size: 50px;
+    }
+
+    .c1-text {
+        font-size: 9px;
+    }
+
+    .c1-today,
+    .c2-pageview {
+        font-size: 12px;
+    }
+
+    .c2-num {
+        font-size: 35px;
+    }
+
+    .c2-percent {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .c1 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .c2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .c1-username {
+        font-size: 12px;
+    }
+
+    .c1-num {
+        font-size: 50px;
+    }
+
+    .c1-text {
+        font-size: 9px;
+    }
+
+    .c1-today,
+    .c2-pageview {
+        font-size: 12px;
+    }
+
+    .c2-num {
+        font-size: 35px;
+    }
+
+    .c2-percent {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-social {
+        font-size: 20px;
+    }
+}
